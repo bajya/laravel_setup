@@ -125,7 +125,7 @@
 
 @push('scripts')
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=AIzaSyCHjWiLctEWEIwycRfETV1LZOEHsEEeZA4"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key="></script>
 <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key={{env('MAP_API_KEY')}}"></script> -->
 <script>
 /* script */

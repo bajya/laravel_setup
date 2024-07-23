@@ -267,7 +267,7 @@ class HomeController extends Controller
         $url = "https://fcm.googleapis.com/fcm/send";
         $registrationIds = $token;
         $serverKey =env('FCM_LEGACY_KEY');
-        // $serverKey ='AAAA5kDkEW4:APA91bGg79-bDEU7OOLo9QWC9bQLIKuaJxt0wWv1vOEKjyTj6sKHIpi1lu5y6neXlBUOuayYvuLpdT4UVMaYBv4ksiKU3Bxq1yvdMO9sRwnyKZg8kcp8k4p_6Qho4jv48YwqFy9rzSiX';
+       
         $body = $extramessage;
         $notification = array('title' =>$title , 'body' => $body, 'text' => $body, 'sound' => $sound);
         $arrayToSend = array('to' => $registrationIds, 'notification'=>$notification,'priority'=>'high');
