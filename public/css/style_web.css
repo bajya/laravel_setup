@@ -1,0 +1,1269 @@
+/* Author By : - Abhishek Singh Solanki */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.eot');
+    src: url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.svg#Inter-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype'),
+        url('../fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.ttf') format('truetype'),
+        url('../fonts/Inter-Bold.svg#Inter-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+*,
+*::before,
+*::after,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: #000;
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Font Size */
+
+.font14 {
+    font-size: 14px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font26 {
+    font-size: 26px;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font35 {
+    font-size: 35px;
+}
+
+.font40 {
+    font-size: 40px;
+}
+
+/* Font Weight */
+
+.fontLight {
+    font-weight: 300;
+}
+
+.fontRegular {
+    font-weight: normal;
+}
+
+.fontMedium {
+    font-weight: 500;
+}
+
+.fontSemiBold {
+    font-weight: 600;
+}
+
+.fontBold {
+    font-weight: 700;
+}
+
+/* Color */
+
+.color1 {
+    color: #43b173;
+}
+
+.colorBlack {
+    color: #000;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+.color5 {
+    color: #555;
+}
+
+/* Background-Color */
+
+.bg1 {
+    background-color: #43b173;
+}
+
+.bg2 {
+    background-color: #04213e;
+}
+
+/* Common Css */
+
+/* .faq .card-header {background-color: transparent;}
+.faq .card .card-header {padding-top: 0;padding-bottom: 0;border-bottom: none;}
+.faq .card .card-body {padding-top: 0;padding-bottom: 0;}
+.faq .card .card-header::after {content: "\f107";font-family: 'fontAwesome';position: absolute;right: 0;top: 2vh;} */
+
+.accordion {
+    margin-top: 40px;
+}
+
+.accordion .card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.accordion .card h2 {
+    background: url(https://cdn0.iconfinder.com/data/icons/entypo/91/arrow56-512.png) no-repeat calc(100% - 10px) center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.accordion .card h2.collapsed {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/expand2-256.png);
+}
+
+.accordion .card-body {
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.toggleMenu,
+#closeMenu {
+    display: none;
+}
+
+.logoBlock svg g .st0,
+.footerLogo svg g .st0 {
+    fill: #000;
+}
+
+.sticky .logoBlock svg g .st0 {
+    fill: #fff;
+}
+
+p,
+.accordion .card-body {
+    color: #3f3f3f;
+}
+
+.footerSocial svg .st0 {
+    fill: #fff;
+}
+
+.copyRight ul li:hover a {
+    background-color: #fff;
+    color: #31b642 !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 79.17vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .menus ul li a {
+        font-size: 1.15vw;
+        color: #fff;
+    }
+
+    .menus ul li {
+        margin-right: 2.4vw;
+        position: relative;
+    }
+
+    .menus ul li::after {
+        content: "";
+        position: absolute;
+        border-bottom: 0.1vw solid #fff;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        transition: all 0.5s;
+    }
+
+    .menus ul li:hover::after {
+        width: 100%;
+    }
+
+    .logoBlock img {
+        width: 100vw;
+    }
+
+    span.bannerBigEffect::after {
+        background: rgba(52, 184, 69, 1);
+        background: -moz-linear-gradient(left,
+            rgba(52, 184, 69, 1) 0%,
+            rgba(52, 184, 69, 1) 19%,
+            rgba(109, 235, 126, 1) 100%);
+        background: -webkit-gradient(left top,
+            right top,
+            color-stop(0%, rgba(52, 184, 69, 1)),
+            color-stop(19%, rgba(52, 184, 69, 1)),
+            color-stop(100%, rgba(109, 235, 126, 1)));
+        background: -webkit-linear-gradient(left,
+            rgba(52, 184, 69, 1) 0%,
+            rgba(52, 184, 69, 1) 19%,
+            rgba(109, 235, 126, 1) 100%);
+        background: -o-linear-gradient(left,
+            rgba(52, 184, 69, 1) 0%,
+            rgba(52, 184, 69, 1) 19%,
+            rgba(109, 235, 126, 1) 100%);
+        background: -ms-linear-gradient(left,
+            rgba(52, 184, 69, 1) 0%,
+            rgba(52, 184, 69, 1) 19%,
+            rgba(109, 235, 126, 1) 100%);
+        background: linear-gradient(to right,
+            rgba(52, 184, 69, 1) 0%,
+            rgba(52, 184, 69, 1) 19%,
+            rgba(109, 235, 126, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#34b845', endColorstr='#6deb7e', GradientType=1);
+        content: "";
+        position: absolute;
+        width: 56vw;
+        height: 110vh;
+        right: -5vw;
+        border-radius: 5vw;
+        transform: rotate(56deg);
+        top: -58vh;
+        z-index: -1;
+    }
+
+    .bannerContent {
+        font-size: 3.9vw;
+        line-height: normal;
+    }
+
+    p.bannerPara {
+        margin-top: 3vh;
+        font-size: 1.35vw;
+    }
+
+    .customBtn a {
+        background: rgba(50, 185, 68, 1);
+        background: -moz-linear-gradient(top, rgba(50, 185, 68, 1) 0%, rgba(177, 185, 44, 1) 100%);
+        background: -webkit-gradient(left top,
+            left bottom,
+            color-stop(0%, rgba(50, 185, 68, 1)),
+            color-stop(100%, rgba(177, 185, 44, 1)));
+        background: -webkit-linear-gradient(top, rgba(50, 185, 68, 1) 0%, rgba(177, 185, 44, 1) 100%);
+        background: -o-linear-gradient(top, rgba(50, 185, 68, 1) 0%, rgba(177, 185, 44, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(50, 185, 68, 1) 0%, rgba(177, 185, 44, 1) 100%);
+        background: linear-gradient(to bottom, rgba(50, 185, 68, 1) 0%, rgba(177, 185, 44, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32b944', endColorstr='#b1b92c', GradientType=0);
+        color: #fff;
+        height: 8vh;
+        line-height: 8vh;
+        padding: 0 2vw;
+        border-radius: 5vw;
+        margin-top: 5vh;
+        font-size: 1.2vw;
+    }
+
+    .bannerStores {
+        margin-top: 7vh;
+    }
+
+    .bannerStores img {
+        width: 100vw;
+    }
+
+    .bannerStores a {
+        margin-right: 1vw;
+    }
+
+    .bannerBlock {
+        margin-top: 10vh;
+        position: relative;
+    }
+
+    .bannerLeftContent {
+        position: absolute;
+        left: 0;
+        top: 22vh;
+        width: 100%;
+    }
+
+    .bannerImgRight img {
+        width: 100vw;
+    }
+
+    header {
+        padding-top: 3vh;
+    }
+
+    span.vector1::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector1.png);
+        background-size: 5vw;
+        left: 14vw;
+        top: 3vh;
+        width: 5vw;
+        height: 11vh;
+        background-repeat: no-repeat;
+    }
+
+    span.vector1::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector2.png);
+        background-repeat: no-repeat;
+        left: 59vw;
+        top: 0;
+        background-size: 7vw;
+        width: 7vw;
+        height: 12vh;
+    }
+
+    span.vector2::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector1.png);
+        background-repeat: no-repeat;
+        background-size: 2vw;
+        width: 2.2vw;
+        height: 3.8vh;
+        left: 33vw;
+        top: 12vh;
+    }
+
+    span.vector2::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector2.png);
+        background-repeat: no-repeat;
+        background-size: 1.3vw;
+        width: 1.5vw;
+        height: 3vh;
+        left: 4vw;
+        bottom: 41vh;
+    }
+
+    span.vector3::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector3.png);
+        background-repeat: no-repeat;
+        background-size: 10vw;
+        width: 10vw;
+        height: 23vh;
+        right: 8vw;
+        top: 17vh;
+    }
+
+    span.vector3::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector3.png);
+        background-repeat: no-repeat;
+        background-size: 10vw;
+        width: 10vw;
+        height: 23vh;
+        right: 36vw;
+        bottom: 17vh;
+    }
+
+    span.bannerBigEffect::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector3.png);
+        background-repeat: no-repeat;
+        background-size: 10vw;
+        width: 10vw;
+        height: 23vh;
+        right: -6vw;
+        top: -29vh;
+    }
+
+    /* Footer */
+
+    .foterTitle {
+        font-size: 1.5vw;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 1vh;
+        color: #fff;
+    }
+
+    .foterTitle::after {
+        content: "";
+        position: absolute;
+        border-bottom: 0.15vw solid #fff;
+        width: 3vw;
+        left: 0;
+        bottom: 0;
+    }
+
+    .downloadPara {
+        margin-top: 3.5vh;
+        font-size: 1.2vw;
+        color: #fff;
+    }
+
+    .footerLogo img {
+        width: 100vw;
+    }
+
+    .footerLogo {
+        margin-bottom: 10vh;
+    }
+
+    span.footerSpan1::after {
+        content: "";
+        position: absolute;
+        background-color: #31b642;
+        left: 50%;
+        top: 0;
+        width: 85vw;
+        height: 89vh;
+        transform: rotate(-6deg) translateX(-50%);
+        border-radius: 5vw;
+        z-index: -1;
+    }
+
+    footer {
+        overflow-y: hidden;
+    }
+
+    .footerContact span,
+    .footerContact a {
+        font-size: 1.2vw;
+        color: #fff;
+        margin-left: 1.5vw;
+        margin-top: -1vh;
+    }
+
+    .footerContact ul.footerContactDetail {
+        margin-top: 3.5vh;
+    }
+
+    .copyRight p {
+        color: #fff;
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    .footerSocial img {
+        width: 100vw;
+    }
+
+    .footerSocial a {
+        margin-right: 2vw;
+        width: 13vw;
+    }
+
+    .footerSocial {
+        margin-top: 4vh;
+    }
+
+    .footerBottom {
+        border-top: 1px solid #fff;
+        margin-top: 3vh;
+        padding-top: 3vh;
+    }
+
+    .footerContact .fa-map-marker-alt,
+    .footerContact .fa-phone-alt,
+    .footerContact .fa-whatsapp,
+    .footerContact .fa-envelope {
+        font-size: 1.35vw;
+        color: #fff;
+    }
+
+    .footerContactDetail li {
+        margin-bottom: 2vh;
+        display: flex;
+    }
+
+    .copyRight ul li {
+        margin-left: 1.5vw;
+    }
+
+    .copyRight ul li a {
+        font-size: 1.35vw;
+        color: #fff;
+        border: 0.1vw solid #fff;
+        width: 3vw;
+        height: 6vh;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerStoreBlock {
+        padding-left: 10vw;
+    }
+
+    span.footerSpan1::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/banner-vector1.png);
+        background-repeat: no-repeat;
+        background-size: 4.5vw;
+        left: 12vw;
+        top: 24vh;
+        width: 4vw;
+        height: 9vh;
+        background-position: top center;
+    }
+
+    span.footerSpan2::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector2.png);
+        background-repeat: no-repeat;
+        background-size: 3vw;
+        width: 3vw;
+        height: 7vh;
+        right: 17vw;
+        top: 9vh;
+    }
+
+    .blockTitle {
+        position: relative;
+        font-size: 2.5vw;
+        font-weight: bold;
+        margin-bottom: 3vh;
+    }
+
+    .blockTitle::after {
+        content: "";
+        position: absolute;
+        border-bottom: 0.3vw solid #31b642;
+        width: 4vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    p.aboutContentPara {
+        font-size: 1.34vw;
+    }
+
+    .aboutImg img {
+        width: 100vw;
+    }
+
+    section.aboutUs,
+    section.hiw,
+    section.appDesign,
+    section.faq {
+        margin-top: 15vh;
+    }
+
+    section.faq {
+        margin-bottom: 15vh;
+    }
+
+    .work-img img {
+        width: 100vw;
+    }
+
+    .hiwLeft ul li {
+        margin-bottom: 8vh;
+        display: flex;
+    }
+
+    .hiwLeft p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    titleone {
+        font-size: 1.4vw;
+        font-weight: bold;
+        margin-bottom: 2vh;
+    }
+
+    .hiwLeft ul li para {
+        font-size: 1.2vw;
+    }
+
+    span.hiwImages {
+        max-width: 7vw;
+        min-width: 7vw;
+        margin-right: 2vw;
+    }
+
+    span.hiwImages.hiwImagesRight {
+        margin-left: 2vw;
+        margin-right: 0;
+    }
+
+    span.hiwImages img {
+        width: 100vw;
+    }
+
+    .sectionTitle2 {
+        text-align: center;
+        margin-bottom: 10vh;
+        position: relative;
+        padding-bottom: 3vh;
+    }
+
+    .sectionTitle2Title {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+    .sectionTitle2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 0.3vw solid #31b642;
+        width: 5vw;
+    }
+
+    /* .faq .card .card-header h2 button {color: #000;font-size: 1.35vw;font-weight: bold;margin: 0;padding: 0;}
+    .faq .card .card-body {font-size: 1.3vw;}
+    .faq .card .card-header {padding-bottom: 1vh;}
+    .faq .card {margin-bottom: 2vh;border: none;border-bottom: 0.1px solid #e8e8e8 !important;} */
+    .accordion .card-body {
+        font-size: 1.3vw;
+        padding: 1vh 0 2vh;
+    }
+
+    .accordion .card h2 {
+        font-size: 1.35vw;
+        background-size: 1.5vw;
+        font-weight: bold;
+    }
+
+    p.sectionTitle2Tagline {
+        font-size: 1.2vw;
+    }
+
+    .faq .card .card-head {
+        margin-bottom: 2.5vh;
+    }
+
+    .faq .card {
+        border-bottom: 0.1vw solid #ccc !important;
+        border-radius: 0;
+        margin-bottom: 2vh;
+    }
+
+    span.aboutvector1::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/about-corner-left.png);
+        background-repeat: no-repeat;
+        left: 0vw;
+        top: 0vh;
+        width: 5vw;
+        height: 18vh;
+        background-size: 5vw;
+    }
+
+    span.aboutvector1::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/about-corner-right.png);
+        background-repeat: no-repeat;
+        right: 0vw;
+        bottom: -12vh;
+        width: 5vw;
+        height: 20vh;
+        background-size: 5vw;
+    }
+
+    span.aboutvector2::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector1.png);
+        background-repeat: no-repeat;
+        left: 12vw;
+        top: 0vh;
+        width: 3vw;
+        height: 5vh;
+        background-size: 3vw;
+    }
+
+    span.aboutvector2::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector2.png);
+        background-repeat: no-repeat;
+        left: 38vw;
+        bottom: -3vh;
+        width: 2.5vw;
+        height: 5vh;
+        background-size: 2vw;
+    }
+
+    span.aboutvector3::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector-line.png);
+        background-repeat: no-repeat;
+        left: 26vw;
+        bottom: -10vh;
+        width: 1vw;
+        height: 6vh;
+        background-size: 1vw;
+    }
+
+    span.faqvector1::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector2.png);
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: 0;
+        width: 2.5vw;
+        height: 5vh;
+        background-size: 2vw;
+    }
+
+    span.faqvector1::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector1.png);
+        background-repeat: no-repeat;
+        left: 5vw;
+        bottom: 50vh;
+        width: 2.5vw;
+        height: 5vh;
+        background-size: 2vw;
+    }
+
+    span.faqvector2::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/about-corner-right.png);
+        background-repeat: no-repeat;
+        right: 0vw;
+        bottom: -12vh;
+        width: 5vw;
+        height: 20vh;
+        background-size: 5vw;
+    }
+
+    span.appdesignvector1::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/app-design-left.png);
+        background-repeat: no-repeat;
+        left: 0vw;
+        top: 30vh;
+        width: 5vw;
+        height: 20vh;
+        background-size: 5vw;
+    }
+
+    span.appdesignvector1::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/app-design-right.png);
+        background-repeat: no-repeat;
+        right: 0vw;
+        bottom: -12vh;
+        width: 5vw;
+        height: 25vh;
+        background-size: 5vw;
+    }
+
+    span.appdesignvector2::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector1.png);
+        background-repeat: no-repeat;
+        left: 4vw;
+        bottom: 20vh;
+        width: 3vw;
+        height: 6vh;
+        background-size: 3vw;
+    }
+
+    span.appdesignvector2::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/vector2.png);
+        background-repeat: no-repeat;
+        right: 2vw;
+        top: 30vh;
+        width: 4vw;
+        height: 7vh;
+        background-size: 3vw;
+    }
+
+    .owl-nav button span {
+        font-size: 3vw;
+        width: 3vw;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 50vw;
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 0.1vw solid green;
+        width: 7vw;
+        border-radius: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: -8vh;
+    }
+
+    .owl-nav button span:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    span.vector1::after,
+    .aboutvector1::after,
+    .aboutvector1::before,
+    .appdesignvector1::before,
+    .appdesignvector1::after,
+    .faqvector2::before,
+    .footerSpan1::before,
+    .bannerImgRight img,
+    .aboutImg img,
+    .work-img img {
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+    }
+
+    span.vector1::before,
+    span.vector2::after,
+    span.vector2::before,
+    .aboutvector2::after,
+    .aboutvector2::before,
+    .appdesignvector2::before,
+    .appdesignvector2::after,
+    .faqvector1::after,
+    .faqvector1::before,
+    .footerSpan2::after {
+        -webkit-animation: rotation 5s infinite linear;
+    }
+
+    @keyframes bounce {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+
+        to {
+            transform: translate3d(0, 20px, 0);
+        }
+    }
+
+    @-webkit-keyframes bounce {
+        from {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        to {
+            -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+        }
+    }
+
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+    }
+
+    header.sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #317131;
+        z-index: 999;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        padding-bottom: 15px;
+        transition: all 0.5s;
+    }
+}
+
+@media all and (-ms-high-contrast: none) {
+    .bannerStores img {
+        width: 100%;
+    }
+
+    *::-ms-backdrop,
+    .bannerStores img {
+        width: 100%;
+    }
+
+    .accordion .card h2.collapsed {
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .menus ul li {
+        margin-left: 20px;
+    }
+
+    header {
+        padding: 10px 0;
+        background-color: #317131;
+    }
+
+    footer {
+        background-color: #317131;
+        padding: 30px 0;
+    }
+
+    .footerLogo {
+        margin-bottom: 30px;
+    }
+
+    .foterTitle {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .downloadPara {
+        margin-bottom: 20px;
+    }
+
+    .footerSocial a {
+        margin-right: 30px;
+    }
+
+    .footerContactDetail span,
+    .footerContactDetail a {
+        margin-left: 15px;
+    }
+
+    .footerContactDetail li {
+        margin-bottom: 5px;
+    }
+
+    .footerBottom {
+        margin-top: 30px;
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+    }
+
+    .copyRight ul li {
+        margin-left: 20px;
+    }
+
+    .bannerBlock {
+        margin: 50px 0;
+    }
+
+    .bannerContent {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .bannerContent br {
+        display: none;
+    }
+
+    .bannerPara {
+        margin-bottom: 12px;
+    }
+
+    .customBtn a {
+        background-color: #b1b92b;
+        color: #fff;
+        height: 40px;
+        align-items: center;
+        display: inline-flex;
+        padding: 0 20px;
+        border-radius: 50px;
+    }
+
+    .customBtn {
+        margin-bottom: 20px;
+    }
+
+    .bannerStores a {
+        margin-right: 30px;
+    }
+
+    .blockTitle {
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .hiw {
+        margin-top: 50px;
+    }
+
+    .sectionTitle2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sectionTitle2Title {
+        font-size: 32px;
+    }
+
+    .hiwLeft ul li img {
+        max-width: 65px;
+    }
+
+    .hiwLeft ul li p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    titleone {
+        margin: 13px 0 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hiwLeft ul li {
+        margin-bottom: 30px;
+    }
+
+    .accordion .card h2 {
+        font-size: 22px;
+        padding-right: 40px;
+    }
+
+    .footerLogo svg {
+        width: 315px;
+    }
+
+    .logoBlock svg g .st0 {
+        fill: #fff;
+    }
+
+    footer,
+    footer a,
+    footer p {
+        color: #fff;
+    }
+
+    .footerLogo svg g .st0 {
+        fill: #fff;
+    }
+
+    .menus li a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .menus ul li {
+        margin-left: 15px;
+    }
+
+    .bannerBlock .row {
+        align-items: center;
+    }
+
+    .aboutUs .row {
+        align-items: center;
+    }
+
+    .hiw .row {
+        align-items: center;
+    }
+
+    .bannerStores svg {
+        margin-bottom: 10px;
+    }
+
+    .logoBlock svg {
+        width: 100%;
+    }
+
+    .footerStoreBlock svg {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logoBlock {
+        margin-bottom: 15px;
+    }
+
+    .footerContact {
+        margin-top: 25px;
+    }
+
+    .copyRight {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footerLogo svg {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bannerLeftContent {
+        margin-top: 30px;
+    }
+
+    .accordion .card h2 {
+        font-size: 16px;
+    }
+
+    .menus ul {
+        position: fixed;
+        flex-direction: column;
+        align-items: start !important;
+        background-color: #fff;
+        top: 0;
+        left: -110%;
+        width: 320px;
+        padding: 40px 0;
+        height: 100%;
+        z-index: 999;
+        justify-content: start !important;
+        transition: all 0.5s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .toggleMenu {
+        position: absolute;
+        top: -35px;
+    }
+
+    .toggleMenu a {
+        font-size: 24px;
+    }
+
+    .menuhere ul {
+        left: 0;
+    }
+
+    li#closeMenu {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menus li a {
+        margin-bottom: 15px;
+        display: inline-flex;
+        font-size: 18px;
+    }
+
+    .toggleMenu,
+    #closeMenu {
+        display: block;
+    }
+
+    .accordion .card-body {
+        padding-bottom: 0;
+    }
+
+    .menus li a {
+        color: #000;
+    }
+
+    .bannerStores svg {
+        width: 135px;
+    }
+
+    .bannerStores a {
+        margin-right: 10px;
+    }
+
+    .footerSocial a {
+        margin-right: 10px;
+    }
+
+    .footerStoreBlock svg {
+        width: 135px;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+}

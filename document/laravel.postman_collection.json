@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "b1181469-e33f-4d52-a9b6-74faccb64d80",
+		"name": "Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27202574",
+		"_collection_link": "https://universal-meadow-502607.postman.co/workspace/My-Workspace~2a5533b0-0d7e-4eea-811c-cae7077ce866/collection/27202574-b1181469-e33f-4d52-a9b6-74faccb64d80?action=share&source=collection_link&creator=27202574"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mansi.singhal80784@company.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}login",
+					"host": [
+						"{{BASE_URL}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Newdata",
+							"type": "text"
+						},
+						{
+							"key": "store_name",
+							"value": "dmart",
+							"type": "text"
+						},
+						{
+							"key": "contact_person_name",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mansi.singhal80@company.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone_code",
+							"value": "91",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "8765445634",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipur",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/image.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}signUp",
+					"host": [
+						"{{BASE_URL}}signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWRhNGYwMjA0YjFkOTRiNTlkMDRjMzM2N2VkZjU4NWE1NDYxMmY4ZmY0YzE0Y2MzNzQwZTZmYWJiODUyMzE5NzRhMGZiMTgwZTU4MTY5YzciLCJpYXQiOjE3MDk1NDgyNjcuMDk2NjY4LCJuYmYiOjE3MDk1NDgyNjcuMDk2NjcsImV4cCI6MTc0MTA4NDI2Ny4wOTEwNywic3ViIjoiMjk2Iiwic2NvcGVzIjpbXX0.ZM7gEciJAjy09dXCrms1fmOAAHFUjWiBdXkDkzncsB3QEOQB7BoMUVY3Hvbv7TRfKwnK-Ny8x4SqOQuKCmdq7Isl4eyPv2nUl_FiI3DrM2p1cp5MSTWnc0UK2g6lCdYwHbTrBHtRfMqQk7g6sJi3CNvAOC4MNfm06txUaYJZxFZZ9ArvFBxFshQp2cS3oi5o9d4t_3VvtWujjyaZkw90eIUSQQVl72--I6ohqyIYSa60fLLAVqd11vGG0om4-3jv3XUHKxjBBc4ryoKtB4KMmcc_R4fHgJFDGS5w7GkxifdXEZbHEZ8JaIlVXGMlAH_tbhcJMFhw-XiUp2tuQIhWmKZbAhY4h816-nA5QIEJewFzksbkJ7sUB3y3IUfBkRuKernLoyTQu2s6MN5zKKdTn-zN37g4l_pQkDBjlEfPl1R8IziXyrHcO43UgBFp_VX2kADf44uLV1whRIethUFa_jBD8t6pXunj-6swi3Vun7873G2qGqbrmFNmwAsMOHk5WCyrMYWSSZwPHiXEO5y5II6GQ_tEGGhwe8ejPLT6CPHnG1lXKkbYmy-uKwzqC0wJC04EU9gjQ-DCKWuI57JUy2BF1JLNJlpqpi76r5eamjDsMYzu9zdWEOPjSiz4uEaOvhLPI5JAicdfxPyxRJuiVaLcKqLw-naCBMj_Z79AtFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "manviii",
+							"type": "text"
+						},
+						{
+							"key": "phone_code",
+							"value": "91",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "7654356789",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Purchase",
+							"type": "text"
+						},
+						{
+							"key": "item_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}AddCustomer",
+					"host": [
+						"{{BASE_URL}}AddCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTczNWU0ZDNmOTUwZDIyNTRkZjRmZTU0YmIyNjMzZjYwZjM1ZWY4ZDk1MTcxNTRlZmRhYjFjMjI4ODBiZjQ3ZjFjZWM3MjQ0NzIyZGIyNjciLCJpYXQiOjE3MDkyMDc3ODkuNzA5MDczLCJuYmYiOjE3MDkyMDc3ODkuNzA5MDc5LCJleHAiOjE3NDA4MzAxODkuNjkyMDIsInN1YiI6IjI2MiIsInNjb3BlcyI6W119.eav245nc-9ZgSfAvZxAu4F_PnazJQeBDYd8F6OwbYehYfxRCM0_-ArS1UPQ2eta7JYzY6eSFGQx2Zjg8WD4oDyzKyDuZlZdpaW7kegvLECagvfRpPREQpTKlUKiq22K284ozpeEndH7PqXC-C_XU02WS9KQTVP9zvr7lPJCpq22EzruAufJCmZLtEhGndLrKtNkOlaqlGBxsoWlgP2MgK0w2qtbdEtoeokhgenDKwXeosDbCcOALmpMub7Lbv7hxah9Pc3snFsa9d3vfqpFI8UVsp_Lk5fZXVFmRxX-TVtx0GjfZ-AHbKx80b6AtAfwzZIo26FmD5EMllNZi6ajjYHamX0gcgC5TLNJqVrpz5wZ7w8Uc9GJ6XaLLqeWQEGdNgjjkMj6uBqVzjfjjcVzAngdkkHMiiWtn58-fRDztHkXIn80b7H5nTlCBg-jqr7vbS38-4F8EXmnDPCSdJPnHHze37JkMR0079CSTab5xMUO77-Osq3vzV7Y7kFAWlhrBVaIbyztmE9WBJvwAwioQ257Hihv4qjI6kCKS56kZIKaQ1_LIGn09HvdCDIYxJ4nYBp-Pd1lzpCgvKRBEzdFb2ndG5UmH5iWLa-46-lESegOpwhOqSywxKlTUkxl3IjIGc7YI-OitknQxJp7omG-FtwEmtUlJFdt4KubkTf1WGdU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}Home",
+					"host": [
+						"{{BASE_URL}}Home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Item List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}itemList",
+					"host": [
+						"{{BASE_URL}}itemList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTFjYjdkNjUxMDhkYjdhYTgwYjVjN2ZjYzVkYTVhYzc5NTdmYzdlZjMwYmQzOTMyOWIyMDQyYmMyZWFiOTFiMGIwNzE2NzdmNzJmOWNjZDYiLCJpYXQiOjE3MDkyODYzOTAuMTUxMDYsIm5iZiI6MTcwOTI4NjM5MC4xNTEwNjcsImV4cCI6MTc0MDgyMjM5MC4xNDY2NzQsInN1YiI6IjI4NCIsInNjb3BlcyI6W119.R0YSS2KZ1Le0a68yNc2qoQnERs1NZOkbQO1qSD1pp0Bo8EBiJ_uy035NlvRxw22UHgVo-pOYf3tQgwW-4tDpWw2rgmKNB7d5nU9LqG4x1xCks9z4cA8pql-JSqDJBG-UoGj5FuKP95XgWBJoRbjuLWFwnykeij5YUrIipcLUjkn3g1rAyd-0VXv9QmgXHU2pTmilWH1teZqg2mrYGmR2cAzlqPvSo3oMhMHXnOm2h7xDZBwIevHC7Xf7DWAjmxuOCyrgZowBVff0_wjvR1bKoI3Rl3Mv2Ri65q4NeG5OfR5RyyuvuNyzwwtWFkxlAlLm9mij5arNPRlze7p56ZWdO_KxapIHTpWrIG95-lxBEWrKNZaxWk__mol7AT33utL9q0e565GSZcfRxAjlpPFI0caH3X7ixBbgEVH-XuFTEWGC6_7z1RDpxAln8k9pqq0Hwjk7ccq2Ob2Q3jC8AM2VN_AbECTVETwOI2VjVSweFV-YwPPveewLOGofFM7egS66QHK-3AdLe8bdLfx_RAodmog42T-XdWj1XcJvORCZZWS_sGb8QMAvqBZKDv1zli2I0rn2zEyVi9cj9-aZQI9Mp4uLnN7EU5rvJwR-dHrXaf4LhsaW0OtmQN6TKpiW__6bIXklcsS8fQ3I7Y29ECX7YMI49LUzksMUWxn2lEAAXLI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mansi.singhal22@company.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}forgotPassword",
+					"host": [
+						"{{BASE_URL}}forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cmspage/terms-and-conditions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}cmspage/terms-and-conditions",
+					"host": [
+						"{{BASE_URL}}cmspage"
+					],
+					"path": [
+						"terms-and-conditions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTFjYjdkNjUxMDhkYjdhYTgwYjVjN2ZjYzVkYTVhYzc5NTdmYzdlZjMwYmQzOTMyOWIyMDQyYmMyZWFiOTFiMGIwNzE2NzdmNzJmOWNjZDYiLCJpYXQiOjE3MDkyODYzOTAuMTUxMDYsIm5iZiI6MTcwOTI4NjM5MC4xNTEwNjcsImV4cCI6MTc0MDgyMjM5MC4xNDY2NzQsInN1YiI6IjI4NCIsInNjb3BlcyI6W119.R0YSS2KZ1Le0a68yNc2qoQnERs1NZOkbQO1qSD1pp0Bo8EBiJ_uy035NlvRxw22UHgVo-pOYf3tQgwW-4tDpWw2rgmKNB7d5nU9LqG4x1xCks9z4cA8pql-JSqDJBG-UoGj5FuKP95XgWBJoRbjuLWFwnykeij5YUrIipcLUjkn3g1rAyd-0VXv9QmgXHU2pTmilWH1teZqg2mrYGmR2cAzlqPvSo3oMhMHXnOm2h7xDZBwIevHC7Xf7DWAjmxuOCyrgZowBVff0_wjvR1bKoI3Rl3Mv2Ri65q4NeG5OfR5RyyuvuNyzwwtWFkxlAlLm9mij5arNPRlze7p56ZWdO_KxapIHTpWrIG95-lxBEWrKNZaxWk__mol7AT33utL9q0e565GSZcfRxAjlpPFI0caH3X7ixBbgEVH-XuFTEWGC6_7z1RDpxAln8k9pqq0Hwjk7ccq2Ob2Q3jC8AM2VN_AbECTVETwOI2VjVSweFV-YwPPveewLOGofFM7egS66QHK-3AdLe8bdLfx_RAodmog42T-XdWj1XcJvORCZZWS_sGb8QMAvqBZKDv1zli2I0rn2zEyVi9cj9-aZQI9Mp4uLnN7EU5rvJwR-dHrXaf4LhsaW0OtmQN6TKpiW__6bIXklcsS8fQ3I7Y29ECX7YMI49LUzksMUWxn2lEAAXLI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}logout",
+					"host": [
+						"{{BASE_URL}}logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteaccount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjgyYjhhZjMwN2JiMDFmMDY2YTYwMTFkODAxNGI5MjAyMmU5NTU5ZGEwMjRjNzczODE1NzE5YzQ2NmFhZTg5ZjUzZmFjZmVjMWU1MmM2N2UiLCJpYXQiOjE3MDk1NDI2NjguMzM5ODUyLCJuYmYiOjE3MDk1NDI2NjguMzM5ODUzLCJleHAiOjE3NDEwNzg2NjguMzMzOTA2LCJzdWIiOiIyOTIiLCJzY29wZXMiOltdfQ.W3b08FGq0QW743dVIaKVWamdsL8ga2ZTQhZrj6ufFlbVDetiRG0qKC9AGcL88_64cWSM_yIUxEbcJS9VKnjgDY9E1y0ehtsOjQ2REXM86Y57xoHIEHx3REObdX3XLreKgwRPwhmAP4LnCDLjPh8atyljoV21XSEa4VzgM1wlq5GeyR1FTznh44J4lNBEcyzKpnIvHv_X08NNC7eu8hSdW41jBA9_sHC6jTdY6_e0D7oJIZG3lyNgoTs6P2zZE0u3T6VqG2gZ0wJ5DEWtCFklMlSxruNXCgx8U-sWmaLeN7nzh6Ou562sq-zTVfmK9smE-lmoE1TP7PqDmtlZPwpZvj_G1leeKvZNFPVPQXkQ7YTaZjgcp9UUBa-oAxJfSF0lO_UH6IL1YXUH2XPI2ans7oHlhIS7LIQX6UT_57NiGIk9PBT_BWJ6fZh4tLA1c-xntYW9auhfUyAtjXm-H6i1FR9knl0FcHZwS8JVFYwXN7OudCfM8T1Skt6YKSVBgBhVubXR7Ys-bfdRJUPehuoteaJ1cDLQO-KFr6_eVHRVsz3eIz3b1n-t1Tfl7Vk9cDO5CEdwE1NtK1xjSA0nkqCrIT95gFTT28ss5WTj1Wx__XXNsUNr5H15EcTHYEG5YMo_ZAnF3GPnhgX_KGdKNWSHOOvly8kfGvP5jXOfVwhRY_M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "deletion_reason",
+							"value": "create new account",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}deleteaccount",
+					"host": [
+						"{{BASE_URL}}deleteaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJiMDhiODhhODUzNTFkNWU3YjYwMjUyZTRkMjc0NWNjYmE4YTFjZWE5Nzg3NjlkMDRhZWVmMmE3Zjk3MTllNzc1NjVjNjVmMDkxNjRhYTQiLCJpYXQiOjE3MDk1NDMwODkuNTY0NzMyLCJuYmYiOjE3MDk1NDMwODkuNTY0NzM0LCJleHAiOjE3NDEwNzkwODkuNTYxMjE3LCJzdWIiOiIyOTMiLCJzY29wZXMiOltdfQ.K-7pJHD7k7pCRr-_J_OZ6CvM3xlQc4V3Ax4-dA4qT3xiz4D_CBeGUMU7CFSdyO4T3_G_gVAEmq6fwghBKFWl77cyeoTb7b4jSLlsxyKoKScQ3ypFA37K08hZfg01bPBrJj90yO5NFIMEdbBFUcuraACExldZVXl8WmHZwGgWCeUmKsx3UvyZrGhW1e1IO6zXW1VXOpoUArcuuOxygunOemRylnVaQhG53x28Zgl7eqUhVuUe7XToXQ8iQjYmGZebjTcW4LervWSkOKgUqCD3mKG0LsAiFNC2qtuMqfsrK1JiuZCciqpeSV1u8473L5j65ixqPzqQgS0ybps4a6BLAy_-3GMRml9mfzcpHV59X3DSQh8LaQyGuCSxYx-pa3YCNfpmtCmoAj11XyqBXYtXr6xFt_tRIXrCeyHeBWdCPs-2XfaeZZrNmrHkzHFOIrVbpOy4wQS5DA_aGXKRuuMDF29XXDgnzflIDNulL3qtNPbBL6z7S5AcF7NbrAMMI3U15vyxqinTiMUxKF0hTQ85QxQcf28iSF48j_PdZDJZ_-Pbjw_zWNWcslPKAeCJ--RFoTA4ClHFBRDLYF6k5z8ElQINKTNDX_rpstEXBY_5G2QWXqpgm5VGDiCdkJTGStYJHLjO8pMUjY68ymOqSv4_92xdG3uLpgs_-Qynca2vyI4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}changepassword",
+					"host": [
+						"{{BASE_URL}}changepassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJiMDhiODhhODUzNTFkNWU3YjYwMjUyZTRkMjc0NWNjYmE4YTFjZWE5Nzg3NjlkMDRhZWVmMmE3Zjk3MTllNzc1NjVjNjVmMDkxNjRhYTQiLCJpYXQiOjE3MDk1NDMwODkuNTY0NzMyLCJuYmYiOjE3MDk1NDMwODkuNTY0NzM0LCJleHAiOjE3NDEwNzkwODkuNTYxMjE3LCJzdWIiOiIyOTMiLCJzY29wZXMiOltdfQ.K-7pJHD7k7pCRr-_J_OZ6CvM3xlQc4V3Ax4-dA4qT3xiz4D_CBeGUMU7CFSdyO4T3_G_gVAEmq6fwghBKFWl77cyeoTb7b4jSLlsxyKoKScQ3ypFA37K08hZfg01bPBrJj90yO5NFIMEdbBFUcuraACExldZVXl8WmHZwGgWCeUmKsx3UvyZrGhW1e1IO6zXW1VXOpoUArcuuOxygunOemRylnVaQhG53x28Zgl7eqUhVuUe7XToXQ8iQjYmGZebjTcW4LervWSkOKgUqCD3mKG0LsAiFNC2qtuMqfsrK1JiuZCciqpeSV1u8473L5j65ixqPzqQgS0ybps4a6BLAy_-3GMRml9mfzcpHV59X3DSQh8LaQyGuCSxYx-pa3YCNfpmtCmoAj11XyqBXYtXr6xFt_tRIXrCeyHeBWdCPs-2XfaeZZrNmrHkzHFOIrVbpOy4wQS5DA_aGXKRuuMDF29XXDgnzflIDNulL3qtNPbBL6z7S5AcF7NbrAMMI3U15vyxqinTiMUxKF0hTQ85QxQcf28iSF48j_PdZDJZ_-Pbjw_zWNWcslPKAeCJ--RFoTA4ClHFBRDLYF6k5z8ElQINKTNDX_rpstEXBY_5G2QWXqpgm5VGDiCdkJTGStYJHLjO8pMUjY68ymOqSv4_92xdG3uLpgs_-Qynca2vyI4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "pancel",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/deal.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}AddItem",
+					"host": [
+						"{{BASE_URL}}AddItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJiMDhiODhhODUzNTFkNWU3YjYwMjUyZTRkMjc0NWNjYmE4YTFjZWE5Nzg3NjlkMDRhZWVmMmE3Zjk3MTllNzc1NjVjNjVmMDkxNjRhYTQiLCJpYXQiOjE3MDk1NDMwODkuNTY0NzMyLCJuYmYiOjE3MDk1NDMwODkuNTY0NzM0LCJleHAiOjE3NDEwNzkwODkuNTYxMjE3LCJzdWIiOiIyOTMiLCJzY29wZXMiOltdfQ.K-7pJHD7k7pCRr-_J_OZ6CvM3xlQc4V3Ax4-dA4qT3xiz4D_CBeGUMU7CFSdyO4T3_G_gVAEmq6fwghBKFWl77cyeoTb7b4jSLlsxyKoKScQ3ypFA37K08hZfg01bPBrJj90yO5NFIMEdbBFUcuraACExldZVXl8WmHZwGgWCeUmKsx3UvyZrGhW1e1IO6zXW1VXOpoUArcuuOxygunOemRylnVaQhG53x28Zgl7eqUhVuUe7XToXQ8iQjYmGZebjTcW4LervWSkOKgUqCD3mKG0LsAiFNC2qtuMqfsrK1JiuZCciqpeSV1u8473L5j65ixqPzqQgS0ybps4a6BLAy_-3GMRml9mfzcpHV59X3DSQh8LaQyGuCSxYx-pa3YCNfpmtCmoAj11XyqBXYtXr6xFt_tRIXrCeyHeBWdCPs-2XfaeZZrNmrHkzHFOIrVbpOy4wQS5DA_aGXKRuuMDF29XXDgnzflIDNulL3qtNPbBL6z7S5AcF7NbrAMMI3U15vyxqinTiMUxKF0hTQ85QxQcf28iSF48j_PdZDJZ_-Pbjw_zWNWcslPKAeCJ--RFoTA4ClHFBRDLYF6k5z8ElQINKTNDX_rpstEXBY_5G2QWXqpgm5VGDiCdkJTGStYJHLjO8pMUjY68ymOqSv4_92xdG3uLpgs_-Qynca2vyI4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "mobile_device_id",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mobile_device_token",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Newdataa",
+							"type": "text"
+						},
+						{
+							"key": "store_name",
+							"value": "dmartt",
+							"type": "text"
+						},
+						{
+							"key": "contact_person_name",
+							"value": "helloo",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mansi.singhal8074@company.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_code",
+							"value": "91",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9756454657",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipurr",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}updateProfile",
+					"host": [
+						"{{BASE_URL}}updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowCustomerList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDk2MzIzYzhjMjc1NzNkYWE2NDAwYmYzYWEzODJhOWQ3NTJkYWNiZjIwMmIyNGVkZjgzNDc4ZjUyYTFhZDFiNmY4NjI0ZGZmODY3ZGQwMWMiLCJpYXQiOjE3MDk1NTE2ODIuOTAxNTc1LCJuYmYiOjE3MDk1NTE2ODIuOTAxNTc3LCJleHAiOjE3NDEwODc2ODIuODk1OTg4LCJzdWIiOiIyOTYiLCJzY29wZXMiOltdfQ.OPo_ef9yvuJi1QHME_maUj7xVcFMR494UpcCP0vvv2e5Qmg5jOWId2qjuSIqHVvSTXCbzbbyDPX1iUIJvO9TJClpMUKRR6P6NbFIE-i_tBGKM0tjO_g_Cnkl1fGg3b-Z_RaKvwsereK5v3Di0gUHQp06pN1j8YxKnTAomEIkfJxK3D1gtQfA41890EPC5SXc6O4_Xr0sXSKfAoYypHO98ZaUFiAaXZ97gQnWTJHeug1oxbsSqUjKfAmjCmKwOBlJLht8baSi8TrzJhGRUaI2qiCGNh20eUfoClcNnW7PUJ1Hy1lFQfit7zEzjCKwIsShJFY1CEUSB1wjCYi0aI4C9rhZNZFUWOG7Wpxe2rTVawkWSv5Baw67uDsY6MAOVNuz_idgMNC3xEn8tK_i0peVq6bVZY7WCCqC4Go3_BaHjw4d_AsSbWUjR4iGazII2EyE33F96RUWj3zY9BXaXvSbYAlxmvB9bjZbW0AszjRHI4mnRWBQZlSGQWGxTKAtPYf_Owq1CnospNj8SjpWDyDNsppUaHU20UFmHO195wmUmjAba5ENKFvgaxJdFZWTYGefIwcCvlr2b_RthObyhiRmEn867WfoVxowq3zm15MxiflLWIcPa8IAEhDyeCgel3u6tuulZENzdtUK8oPeHWVw2Fcm8YosmohrttMkCEEuK_Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}ShowCustomerList",
+					"host": [
+						"{{BASE_URL}}ShowCustomerList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Offer Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDk2MzIzYzhjMjc1NzNkYWE2NDAwYmYzYWEzODJhOWQ3NTJkYWNiZjIwMmIyNGVkZjgzNDc4ZjUyYTFhZDFiNmY4NjI0ZGZmODY3ZGQwMWMiLCJpYXQiOjE3MDk1NTE2ODIuOTAxNTc1LCJuYmYiOjE3MDk1NTE2ODIuOTAxNTc3LCJleHAiOjE3NDEwODc2ODIuODk1OTg4LCJzdWIiOiIyOTYiLCJzY29wZXMiOltdfQ.OPo_ef9yvuJi1QHME_maUj7xVcFMR494UpcCP0vvv2e5Qmg5jOWId2qjuSIqHVvSTXCbzbbyDPX1iUIJvO9TJClpMUKRR6P6NbFIE-i_tBGKM0tjO_g_Cnkl1fGg3b-Z_RaKvwsereK5v3Di0gUHQp06pN1j8YxKnTAomEIkfJxK3D1gtQfA41890EPC5SXc6O4_Xr0sXSKfAoYypHO98ZaUFiAaXZ97gQnWTJHeug1oxbsSqUjKfAmjCmKwOBlJLht8baSi8TrzJhGRUaI2qiCGNh20eUfoClcNnW7PUJ1Hy1lFQfit7zEzjCKwIsShJFY1CEUSB1wjCYi0aI4C9rhZNZFUWOG7Wpxe2rTVawkWSv5Baw67uDsY6MAOVNuz_idgMNC3xEn8tK_i0peVq6bVZY7WCCqC4Go3_BaHjw4d_AsSbWUjR4iGazII2EyE33F96RUWj3zY9BXaXvSbYAlxmvB9bjZbW0AszjRHI4mnRWBQZlSGQWGxTKAtPYf_Owq1CnospNj8SjpWDyDNsppUaHU20UFmHO195wmUmjAba5ENKFvgaxJdFZWTYGefIwcCvlr2b_RthObyhiRmEn867WfoVxowq3zm15MxiflLWIcPa8IAEhDyeCgel3u6tuulZENzdtUK8oPeHWVw2Fcm8YosmohrttMkCEEuK_Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "sssfsdfsff",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/logo.gif"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}PostOfferRequest",
+					"host": [
+						"{{BASE_URL}}PostOfferRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Invoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDk2MzIzYzhjMjc1NzNkYWE2NDAwYmYzYWEzODJhOWQ3NTJkYWNiZjIwMmIyNGVkZjgzNDc4ZjUyYTFhZDFiNmY4NjI0ZGZmODY3ZGQwMWMiLCJpYXQiOjE3MDk1NTE2ODIuOTAxNTc1LCJuYmYiOjE3MDk1NTE2ODIuOTAxNTc3LCJleHAiOjE3NDEwODc2ODIuODk1OTg4LCJzdWIiOiIyOTYiLCJzY29wZXMiOltdfQ.OPo_ef9yvuJi1QHME_maUj7xVcFMR494UpcCP0vvv2e5Qmg5jOWId2qjuSIqHVvSTXCbzbbyDPX1iUIJvO9TJClpMUKRR6P6NbFIE-i_tBGKM0tjO_g_Cnkl1fGg3b-Z_RaKvwsereK5v3Di0gUHQp06pN1j8YxKnTAomEIkfJxK3D1gtQfA41890EPC5SXc6O4_Xr0sXSKfAoYypHO98ZaUFiAaXZ97gQnWTJHeug1oxbsSqUjKfAmjCmKwOBlJLht8baSi8TrzJhGRUaI2qiCGNh20eUfoClcNnW7PUJ1Hy1lFQfit7zEzjCKwIsShJFY1CEUSB1wjCYi0aI4C9rhZNZFUWOG7Wpxe2rTVawkWSv5Baw67uDsY6MAOVNuz_idgMNC3xEn8tK_i0peVq6bVZY7WCCqC4Go3_BaHjw4d_AsSbWUjR4iGazII2EyE33F96RUWj3zY9BXaXvSbYAlxmvB9bjZbW0AszjRHI4mnRWBQZlSGQWGxTKAtPYf_Owq1CnospNj8SjpWDyDNsppUaHU20UFmHO195wmUmjAba5ENKFvgaxJdFZWTYGefIwcCvlr2b_RthObyhiRmEn867WfoVxowq3zm15MxiflLWIcPa8IAEhDyeCgel3u6tuulZENzdtUK8oPeHWVw2Fcm8YosmohrttMkCEEuK_Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device_type\":\"android\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_code\": \"91\",\r\n    \"mobile\": \"1234567890\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": 1,\r\n            \"qty\": 2,\r\n            \"GST\": 5,\r\n            \"cost\": 20\r\n        },\r\n        {\r\n            \"item_id\": 2,\r\n            \"qty\": 1,\r\n            \"GST\": 2,\r\n            \"cost\": 10\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}CreateInvoice",
+					"host": [
+						"{{BASE_URL}}CreateInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InvoiceList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWQwYjI4OGNiY2YyNmVlNWVlODExNTZmNjIyOWFlMjI2OTNlZGRjODM3MWIzN2FkY2M3Nzc1M2ZmMWQ1NDI1MDA5MDBjNWQzMDUyYTM3Y2YiLCJpYXQiOjE3MDk3MTY5MTguNDI0MDA2LCJuYmYiOjE3MDk3MTY5MTguNDI0MDA4LCJleHAiOjE3NDEyNTI5MTguMzQzODksInN1YiI6IjMwOCIsInNjb3BlcyI6W119.aAzLvoDkez6VLak1zadPDSJx1qenOcE1XE88IrjRDcJmS3eWUvuiX6K7YfumT3JySm9x756ptFHY3YFQkF3e-O0lNAB8W1GvYiTMNgl46dl7ruNfty6CXvl7Y0WWOGt-yQ3nmd-fO8sNeqlIlwBOS1wqSRao4df3fYCQqtR8xUx_Y6nDZFlXRPRCaJ8D2jFgsm-tmZQUH-ip5ZROs6uUlRcEkssjETBixi4MjZAIcQ39acm_VUPBftlZfKNfapz_cnycqTR36_xIcUfwLDenpFk1Jk57N38caRk7jC4ekcio6xnnNxhLZheN5ha0bvHzkQCgEubVkOGx4BX99XioVh1u-J0nbD1TrvCTLVpsxjIH8uZHCoMLSsFTHoPQUpI6R8vSAQHvhgd9oGnh1CG-EV-gzrP9Ms6tQoSwD6n-JORYfbZKopPTE2j7ArU-e36bkHqVOjgcd5KfEHHAOwoGxyaQ1sE4ms-huRDagnPkeNJ8PBs5JnH3r8vn4WAvRcny5L7GrTBrJQlalCujijqY7xNDXqcnCeZ-kNzHoE2Ya7zTpN5OiQPg7h7_qR4wTBRq-QZWLB2LMkBiDYqAOIcxjx3Cx_Pfj2bZgttWpVPmwTx-7YT2FaHxc4A0U-wvw26ILn7SIs9nMOadRs530jl-7fMOCQHodhzS6LaYpFWJXNI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}InvoiceList",
+					"host": [
+						"{{BASE_URL}}InvoiceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmJhM2UwYWFhMWIyYmZlOTM1MzEzY2NmN2Q0Njg2ZjZlZDM3YTMwOGU3YWJkYTczYWFhOWY2NTFiZTRjNWEzMjNiYzAyZDE5MjFlMWFkNjkiLCJpYXQiOjE3MDk4MDcxMTIuOTc2NDA3LCJuYmYiOjE3MDk4MDcxMTIuOTc2NDA5LCJleHAiOjE3NDEzNDMxMTIuODc3NDU5LCJzdWIiOiIyOTYiLCJzY29wZXMiOltdfQ.hPo4LxdVkOhNUO9DxZhs6y2cyCYKh0kFgOAjL59nIm8B-cEfatRcX7gl4AcbLRQ1Eo9gusU9bMrXH2iXc6f2vhhlptsgcsYqkR6s3quSiH_Bt_g7XZwk_R2TCgm6BLDYHzluAnt4eb61KZ_Z724eqUhyIq09226D50BBOompOD3BRFdOEKH-k9yT_xKlx_WjKEnM2xPQqMYl4Rd0wHqH1TglGV95QvPpDEN6QqB7bX3nOkcUgA66ifMeA6hNm4yFcLhsga7vUMGviy2yGRceJaTV9K0Zza85VBMVaRVkN1o9NRFW-ITBcgrr_i2VsQ1_1FUP8eEDWdkyoDZeXMi4qYhdx_KgC1qipE5Vb0u6YnL3EZ0nccZNRDnYLxLO2f0CbHnoIydm1Hs0030EEh4D8eFz1kequrenOYZJWEyKrTMqCJ74i1b_Oup7bmZxhGODNxsNHaFTzVQFgVLzagwktItpj5Aqm-lgXiA18C9IBESghmyiMGnXJSO-5gV2jwoN1Vel8xnn6f_sp6YsQem-5D3tTCVZvOlk5d_5_6JI_Nppa1ZIdmOqCugbvNCukWtpi5U2myjqQr53bKKH5X25Wky91evSQzsutmThfgt1KC8mTMeT8xK3Iepq_9SQ6hDE9MMWnMOztzPvcnpbRrq0sprfl2MimtdFzdr_PPgKY_A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}CategoryList",
+					"host": [
+						"{{BASE_URL}}CategoryList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateInvoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmJhM2UwYWFhMWIyYmZlOTM1MzEzY2NmN2Q0Njg2ZjZlZDM3YTMwOGU3YWJkYTczYWFhOWY2NTFiZTRjNWEzMjNiYzAyZDE5MjFlMWFkNjkiLCJpYXQiOjE3MDk4MDcxMTIuOTc2NDA3LCJuYmYiOjE3MDk4MDcxMTIuOTc2NDA5LCJleHAiOjE3NDEzNDMxMTIuODc3NDU5LCJzdWIiOiIyOTYiLCJzY29wZXMiOltdfQ.hPo4LxdVkOhNUO9DxZhs6y2cyCYKh0kFgOAjL59nIm8B-cEfatRcX7gl4AcbLRQ1Eo9gusU9bMrXH2iXc6f2vhhlptsgcsYqkR6s3quSiH_Bt_g7XZwk_R2TCgm6BLDYHzluAnt4eb61KZ_Z724eqUhyIq09226D50BBOompOD3BRFdOEKH-k9yT_xKlx_WjKEnM2xPQqMYl4Rd0wHqH1TglGV95QvPpDEN6QqB7bX3nOkcUgA66ifMeA6hNm4yFcLhsga7vUMGviy2yGRceJaTV9K0Zza85VBMVaRVkN1o9NRFW-ITBcgrr_i2VsQ1_1FUP8eEDWdkyoDZeXMi4qYhdx_KgC1qipE5Vb0u6YnL3EZ0nccZNRDnYLxLO2f0CbHnoIydm1Hs0030EEh4D8eFz1kequrenOYZJWEyKrTMqCJ74i1b_Oup7bmZxhGODNxsNHaFTzVQFgVLzagwktItpj5Aqm-lgXiA18C9IBESghmyiMGnXJSO-5gV2jwoN1Vel8xnn6f_sp6YsQem-5D3tTCVZvOlk5d_5_6JI_Nppa1ZIdmOqCugbvNCukWtpi5U2myjqQr53bKKH5X25Wky91evSQzsutmThfgt1KC8mTMeT8xK3Iepq_9SQ6hDE9MMWnMOztzPvcnpbRrq0sprfl2MimtdFzdr_PPgKY_A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device_type\":\"android\",\r\n    \"id\": \"329\",\r\n    \"name\": \"Johnrr\",\r\n    \"phone_code\": \"91\",\r\n    \"mobile\": \"1234567890\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": 1,\r\n            \"qty\": 2,\r\n            \"GST\": 5,\r\n            \"cost\": 20\r\n        },\r\n        {\r\n            \"item_id\": 2,\r\n            \"qty\": 1,\r\n            \"GST\": 2,\r\n            \"cost\": 10\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}UpdateInvoice",
+					"host": [
+						"{{BASE_URL}}UpdateInvoice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
